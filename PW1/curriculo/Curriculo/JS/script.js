@@ -16,7 +16,7 @@
 //             }
 //         })
 
-const botao = document.getElementById ("Tema");
+const botao = document.getElementById ("tema");
 
 const updateButtonIcon = () => {
     if (!botao) return;
@@ -25,7 +25,7 @@ const updateButtonIcon = () => {
     botao.title = darkMode ? "Mudar para modo claro" : "Mudar para modo escuro";
 };
 
-const temaAtual = localStorage.getItem ("Tema") === "dark" ? "dark" : "light"; if(temaAtual === "dark") {
+const temaAtual = localStorage.getItem ("tema") === "dark" ? "dark" : "light"; if(temaAtual === "dark") {
     document.body.classList.add("dark")
 }
 
