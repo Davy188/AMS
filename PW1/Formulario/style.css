@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #3d3d3d;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* Área principal */
+main {
+    max-width: 774px;
+    margin: 0 auto;
+    padding: 45px 60px 55px;
+    background-color: white;
+}
+
+/* Título */
+h1 {
+    margin: 0 0 45px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.vermelho {
+    color: #ed1c2e;
+}
+
+.sublinhado {
+    text-decoration: underline;
+    text-decoration-color: #ed1c2e;
+    text-underline-offset: 3px;
+}
+
+/* Grid dos campos */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 44px;
+    row-gap: 32px;
+}
+
+/* Cada campo */
+.campo {
+    width: 100%;
+}
+
+/* Título dos campos */
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+/* Ícones */
+.icone {
+    width: 25px;
+    min-width: 25px;
+    font-size: 21px;
+    text-align: center;
+}
+
+/* Tipo do input */
+.tipo {
+    color: #ed1c2e;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    height: 45px;
+    padding: 0 11px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background-color: #fff;
+    color: #333;
+
+    font-size: 18px;
+    outline: none;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #777;
+}
+
+/* Efeito quando clica no input */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #ed1c2e;
+}
+
+/* Radio buttons */
+.radio-container {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    height: 45px;
+}
+
+.radio-container label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.radio-container input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+/* Campo de arquivo */
+input[type="file"] {
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    height: 47px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #ed1c2e;
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* Efeito do botão */
+button:hover {
+    background-color: #d71929;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+/* Ajuste do campo de foto */
+.file-campo {
+    align-self: end;
+}
+
+/* Ajuste do botão */
+.botao-campo {
+    display: flex;
+    align-items: end;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    main {
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    h1 {
+        font-size: 23px;
+        margin-bottom: 35px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+
+    .titulo {
+        font-size: 19px;
+    }
+
+    .radio-container {
+        gap: 12px;
+    }
+}
