@@ -148,5 +148,12 @@ main h2{
 }
 
 .produto button:hover {
-    
+    background-color: #ef4444;
+}
+
+.sobre {
+    background-color: white;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
 }
